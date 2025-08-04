@@ -9,8 +9,8 @@ import java.util.List;
 public class CustomerService {
     @Autowired
     private CustomerRepo customerRepo;
-
     public List<Customer> getCustomer() {
+
         return customerRepo.findAll();
     }
     public void saveCustomer(Customer customer) {
